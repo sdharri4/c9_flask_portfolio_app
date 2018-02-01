@@ -131,46 +131,44 @@
                         </div>
                         <img src="https://www.grandwailea.com/wp-content/uploads/2016/04/spa-grande-interior-round-840x840.jpg" alt="" width="360"height="315">
                     </a>
-                </div>      
+                </div>   
+                    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+                    <title>CalEnder Demo</title>
+                    <style type="text/css" media="screen">
+                      body {
+                        width: 600px;
+                        margin: 0 auto;
+                      }
+                      h1 {
+                        font: 100 46px/1.4 "lucida grande", lucida;
+                        color: #555;
+                      }
+                      input {
+                        font: 36px lucida grande, lucida, helvetica, arial;
+                        padding: 10px;
+                        border: 1px solid #999;
+                      }
+                    </style>
+                    <link rel="stylesheet" href="./calender.css" type="text/css">
+                    <script src="http://ender-js.s3.amazonaws.com/jeesh.min.js"></script>
+                    <script src="./calender.js"></script>
+                    <script>
+                      $(document).ready(function () {
+                        $('#some_date').calender()
+                        $('#i18n_date').calender({
+                          months: 'Enero Febrero Marzo Abril Mayo Junio Julio Agosto Septiembre Octubre Noviembre Diciembre',
+                          daysOfWeek: 'D L M X J V S',
+                          formatDate: function(year, month, day) {
+                            return [day, month, year].join('/')
+                          },
+                          weekStart: 1
+                        })
+                      })
+                    </script>
             </div>
         </div>
     </section>
     
-    <section id ="Portfolio">
-         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <title>CalEnder Demo</title>
-    <style type="text/css" media="screen">
-      body {
-        width: 600px;
-        margin: 0 auto;
-      }
-      h1 {
-        font: 100 46px/1.4 "lucida grande", lucida;
-        color: #555;
-      }
-      input {
-        font: 36px lucida grande, lucida, helvetica, arial;
-        padding: 10px;
-        border: 1px solid #999;
-      }
-    </style>
-    <link rel="stylesheet" href="./calender.css" type="text/css">
-    <script src="http://ender-js.s3.amazonaws.com/jeesh.min.js"></script>
-    <script src="./calender.js"></script>
-    <script>
-      $(document).ready(function () {
-        $('#some_date').calender()
-        $('#i18n_date').calender({
-          months: 'Enero Febrero Marzo Abril Mayo Junio Julio Agosto Septiembre Octubre Noviembre Diciembre',
-          daysOfWeek: 'D L M X J V S',
-          formatDate: function(year, month, day) {
-            return [day, month, year].join('/')
-          },
-          weekStart: 1
-        })
-      })
-    </script>
-    </section>
         
     <!-- About Section -->
     <section class="success" id="about">
